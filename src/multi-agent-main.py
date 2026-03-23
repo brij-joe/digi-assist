@@ -57,10 +57,10 @@ if __name__ == "__main__":
     mygraph = build_graph()
     # Run the graph with some test inputs
     test_inputs = [
-        "Why sky is blue?",
-        "I had a terrible day and I just want to cry.",
-        "Can you explain quantum mechanics in simple terms?",
-        "I'm feeling really anxious about my upcoming exams."
+        "Why sky is blue not violet?",
+        # "I had a terrible day and I just want to cry.",
+        # "Can you explain quantum mechanics in simple terms?",
+        # "I'm feeling really anxious about my upcoming exams."
     ]
 
     for user_input in test_inputs:

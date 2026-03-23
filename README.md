@@ -1,8 +1,113 @@
-# LLM Bssed Multi-Agent Digital Assistant
-A sample project showing how to implement AI multi-agent system to assist an enterprise
+# 🤖 LLM-Based Multi-Agent Digital Assistant
 
-1. This is just a sample code showing how to implement multi-agent AI system. A multi-agent AI system involves multiple autonomous agents that interact to achieve a common goal or perform complex tasks. In this project, agents are designed to collaborate, such as one handling logical reasoning and another managing emotional responses. For more detail, reach out to me at brij_joe@yahoo.com
-2. This project implements a graph based workflow that provides responses either as a logical digital assistance or as emotional digi assistance. The DAG structure ensures a directed flow without cycles, allowing for efficient task execution. Logical assistance focuses on factual, analytical responses, while emotional assistance provides empathetic, supportive interactions, adapting based on user input.
-3. This uses Gemini LLM model, which is Google's large language model designed for natural language understanding and generation. Gemini is integrated to power the AI agents, enabling advanced conversational capabilities and decision-making in the multi-agent system.
+A sample project demonstrating how to build a **multi-agent AI system** for enterprise-grade digital assistance using a graph-based workflow and large language models.
 
-## Reach out to me at [brij_joe@yahoo.com](mailto:brij_joe@yahoo.com) if you need technical know-how to build enterprise grade digital assistant.
+---
+
+## 📌 Overview
+
+This project showcases the implementation of a **multi-agent AI architecture**, where multiple autonomous agents collaborate to perform complex tasks and deliver intelligent responses.
+
+Each agent is designed with a specific responsibility, enabling the system to provide both:
+
+- 🧠 **Logical Assistance** – Analytical, fact-based responses  
+- ❤️ **Emotional Assistance** – Empathetic, human-like interactions  
+
+---
+
+## 🧩 Key Features
+
+### 🔹 Multi-Agent System
+- Multiple autonomous AI agents working together
+- Task specialization across agents (e.g., reasoning vs emotional intelligence)
+- Collaborative decision-making
+
+### 🔹 Graph-Based Workflow (DAG)
+- Directed Acyclic Graph (DAG) structure
+- Ensures:
+  - No cyclic dependencies
+  - Efficient task execution
+  - Clear flow of control between agents
+
+### 🔹 Dual Assistance Modes
+- **Logical Digital Assistant**
+  - Handles reasoning, structured thinking, and factual queries
+- **Emotional Digital Assistant**
+  - Provides supportive, empathetic, and context-aware responses
+
+### 🔹 Powered by Gemini LLM
+- Integrated with **Google’s Gemini Large Language Model**
+- Enables:
+  - Natural language understanding
+  - Context-aware conversations
+  - Intelligent response generation
+
+---
+
+## 🏗️ Architecture Overview
+
+```text
+            User Input
+                 │
+                 ▼
+        ┌─────────────────┐
+        │  Input Analyzer │
+        └─────────────────┘
+                 │
+     ┌───────────┴───────────┐
+     ▼                       ▼
+┌──────────────┐     ┌──────────────┐
+│ Logical Agent│     │ Emotional Agent│
+└──────────────┘     └──────────────┘
+     │                       │
+     └───────────┬───────────┘
+                 ▼
+        ┌─────────────────┐
+        │ Response Builder│
+        └─────────────────┘
+                 │
+                 ▼
+            Final Output
+```
+
+## 🚀 Getting Started
+### Prerequisites
+```text
+Python 3.8+
+Access to Gemini API (Google AI)
+Required dependencies (install via requirements.txt if provided)
+```
+
+### Installation
+```text
+git clone https://github.com/brij-joe/digi-assist.git
+cd digi-assist
+uv venv .venv
+.venv\Scripts\activate
+uv sync
+```
+## Run the Project
+```text
+python src\multi-agent-main.py
+or
+uv run src\multi-agent-main.py
+```
+
+## 📚 Use Cases
+- Enterprise virtual assistants
+- Customer support automation
+- Mental wellness companions
+- Intelligent workflow automation
+- Conversational AI systems
+
+## ⚠️ Disclaimer
+This project is a sample implementation intended for learning and demonstration purposes. It provides a conceptual foundation for building enterprise-grade multi-agent systems.
+
+## 📬 Contact
+For technical guidance, enterprise implementations, or collaboration:
+📧 Email: brij_joe@yahoo.com
+
+# ⭐ Support
+If you find this project useful, consider giving it a ⭐ on GitHub!
+
+---
